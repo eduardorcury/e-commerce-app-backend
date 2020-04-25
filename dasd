@@ -1,0 +1,167 @@
+[33mcommit 37182faca410664b4843f47f25b83e95dff6715a[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: eduardorcury <eduardoribeirocury@gmail.com>
+Date:   Fri Apr 24 15:21:14 2020 -0400
+
+    Validação customizada: email não repetido na inserção de Cliente
+
+[33mcommit 877c58c18e19da1bf7c2b7a023aa6cf61df4c9e5[m
+Author: eduardorcury <eduardoribeirocury@gmail.com>
+Date:   Fri Apr 24 15:09:56 2020 -0400
+
+    Validação customizada de CPF/CNPJ na inserção de cliente
+
+[33mcommit 5b802a4082e72dd9716e3eaeb3eacda221b996a0[m
+Author: eduardorcury <eduardoribeirocury@gmail.com>
+Date:   Fri Apr 24 14:29:58 2020 -0400
+
+    Ajustando e testando deleção de Cliente
+
+[33mcommit 84ea711b8136c9eb83b4a50ff486504570632d2c[m
+Author: eduardorcury <eduardoribeirocury@gmail.com>
+Date:   Fri Apr 24 14:21:47 2020 -0400
+
+    Método PUT para Cliente
+
+[33mcommit 4d205e40944922a3245cfc6334456d095b4d098b[m
+Author: eduardorcury <eduardoribeirocury@gmail.com>
+Date:   Wed Apr 22 19:45:04 2020 -0400
+
+    Update em categoriaService e pagamento]
+
+[33mcommit 2ed430a5e2eae53ffaa9d76dcf6e7a4b3d29285f[m
+Author: eduardorcury <eduardoribeirocury@gmail.com>
+Date:   Wed Apr 22 19:39:09 2020 -0400
+
+    PUT, DELETE e GET para cliente
+
+[33mcommit dfbdc25040791509837d25d53ed991a2ae089ec7[m
+Author: eduardorcury <eduardoribeirocury@gmail.com>
+Date:   Tue Apr 21 14:22:47 2020 -0400
+
+    Personalizando retorno da validação
+
+[33mcommit a4d4d24fc0188ef7aeecdb01c262b17176f88bfe[m
+Author: eduardorcury <eduardoribeirocury@gmail.com>
+Date:   Tue Apr 21 14:02:29 2020 -0400
+
+    Bean Validation
+
+[33mcommit 08d403fb045964414372612bdc43acbdfdd62e42[m
+Author: eduardorcury <eduardoribeirocury@gmail.com>
+Date:   Tue Apr 21 12:36:01 2020 -0400
+
+    Paginação com parâmetros
+
+[33mcommit 48b1b60386fd08eec92d2c8f50550e851affe7da[m
+Author: eduardorcury <eduardoribeirocury@gmail.com>
+Date:   Tue Apr 21 12:07:02 2020 -0400
+
+    Listando Categorias com DTO
+
+[33mcommit 4bd495e5831803afbfdc32a8bbbb33783a677d81[m
+Author: eduardorcury <eduardoribeirocury@gmail.com>
+Date:   Sun Apr 19 16:01:46 2020 -0400
+
+    Metódo DELETE e tratamento de exceção
+
+[33mcommit 7aa3327d31bca832322914ff0569f27b39b5e925[m
+Author: eduardorcury <eduardoribeirocury@gmail.com>
+Date:   Sun Apr 19 15:35:42 2020 -0400
+
+    Método PUT
+
+[33mcommit 81f70105f2f7e066a01f7d5b600134dccee3958d[m
+Author: eduardorcury <eduardoribeirocury@gmail.com>
+Date:   Sun Apr 19 12:29:23 2020 -0400
+
+    Inserindo nova categoria
+
+[33mcommit c3485f7ae9a6c095993b9e9c47d1a2434bc4733c[m
+Author: eduardorcury <eduardoribeirocury@gmail.com>
+Date:   Sat Apr 18 17:32:07 2020 -0400
+
+    Utilizando somente JsonIgnore
+
+[33mcommit 69b3a194e46a618179381e1a617e0e445b483da3[m
+Author: eduardorcury <eduardoribeirocury@gmail.com>
+Date:   Sat Apr 18 17:21:58 2020 -0400
+
+    Endpoint /pedidos/id
+
+[33mcommit f5c77fd5afa545cd3423c9017055e1ca503f452e[m
+Author: eduardorcury <eduardoribeirocury@gmail.com>
+Date:   Sat Apr 18 13:50:31 2020 -0400
+
+    ItemPedido e ItemPedidoPK
+
+[33mcommit 518c0398020bb79b8b7e0c8c44d58bde90718ad2[m
+Author: eduardorcury <eduardoribeirocury@gmail.com>
+Date:   Fri Apr 17 21:45:32 2020 -0400
+
+    Pedido, pagamento e estado do pagamento criados
+
+[33mcommit 1a2c4266d28e54433cee820bcdd2654ad2cfe190[m
+Author: eduardorcury <eduardoribeirocury@gmail.com>
+Date:   Thu Apr 16 15:19:58 2020 -0400
+
+    Endpoint de clientes/id disponível
+
+[33mcommit fd160dc256f0e4aecebda7e4bb38f9dbb5bec2ba[m
+Author: eduardorcury <eduardoribeirocury@gmail.com>
+Date:   Thu Apr 16 15:08:34 2020 -0400
+
+    Cliente, telefone e endereços
+
+[33mcommit 0a012f03ca2067f2123f832386ea0bea8369fc6c[m
+Author: eduardorcury <eduardoribeirocury@gmail.com>
+Date:   Thu Apr 16 14:15:46 2020 -0400
+
+    Estado e Cidade
+
+[33mcommit 17ba5b274b0c17ab30865b3f9f3528193372f0cf[m
+Author: eduardorcury <eduardoribeirocury@gmail.com>
+Date:   Thu Apr 16 13:53:55 2020 -0400
+
+    Exceção adicionada
+
+[33mcommit c861adf2b0eb7308bca9836a944c42033c8a4b9f[m
+Author: eduardorcury <eduardoribeirocury@gmail.com>
+Date:   Thu Apr 16 12:25:41 2020 -0400
+
+    Produto e associação ManyToMany
+
+[33mcommit aff37a5f50f4407286406f1ef2c1c0aead4e9926[m
+Author: eduardorcury <eduardoribeirocury@gmail.com>
+Date:   Thu Apr 16 11:53:34 2020 -0400
+
+    Criando operação de Instanciação
+
+[33mcommit 9b3ac35d46c0950d4eec07905818af9139d35e1d[m
+Author: eduardorcury <eduardoribeirocury@gmail.com>
+Date:   Wed Apr 15 23:15:21 2020 -0400
+
+    Repositories, services para categoria
+
+[33mcommit 238fac71745005a88d31ebb6111c43958b6fd10d[m
+Author: eduardorcury <eduardoribeirocury@gmail.com>
+Date:   Wed Apr 15 20:09:52 2020 -0400
+
+    Banco de dados h2(teste) e criação autmática da base de dados
+
+[33mcommit e9384915c3d0267e96993290f89764b5e9d51294[m
+Author: eduardorcury <eduardoribeirocury@gmail.com>
+Date:   Wed Apr 15 19:45:24 2020 -0400
+
+    Testando classe de domínio
+
+[33mcommit 06a0606f36b45fc60cd460eebbe81b7cfec1a6b2[m
+Author: eduardorcury <eduardoribeirocury@gmail.com>
+Date:   Tue Apr 14 19:48:17 2020 -0400
+
+    Teste de REST
+
+[33mcommit c50d62b97d1a870d701b7f1ee6abfc7f110dcea4[m
+Author: eduardorcury <eduardoribeirocury@gmail.com>
+Date:   Tue Apr 14 19:06:48 2020 -0400
+
+    Projeto criado
