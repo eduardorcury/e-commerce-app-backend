@@ -20,6 +20,7 @@ import com.eduardorib.cursomc.domain.PagamentoComCartao;
 import com.eduardorib.cursomc.domain.Pedido;
 import com.eduardorib.cursomc.domain.Produto;
 import com.eduardorib.cursomc.enums.EstadoPagamento;
+import com.eduardorib.cursomc.enums.Perfil;
 import com.eduardorib.cursomc.enums.TipoCliente;
 import com.eduardorib.cursomc.repositories.CategoriaRepository;
 import com.eduardorib.cursomc.repositories.CidadeRepository;
@@ -119,13 +120,20 @@ public class DBService {
 		Cliente cli1 = new Cliente(null, "Maria Silva", "edurcury98@gmail.com", "36312313", TipoCliente.PESSOAFISICA, pe.encode("123"));
 		cli1.getTelefones().addAll(Arrays.asList("9383123123", "2736213123"));
 
+		Cliente cli2 = new Cliente(null, "Ana costa", "edurcury@gmail.com", "31628382740", TipoCliente.PESSOAFISICA, pe.encode("123"));
+		cli2.addPerfil(Perfil.ADMIN);
+		cli2.getTelefones().addAll(Arrays.asList("9981839", "3451212"));
+
+		
 		Endereco e1 = new Endereco(null, "Rua Flores", "300", "Apto 203", "Jardim", "38220834", cli1, c1);
 		Endereco e2 = new Endereco(null, "Avenida Matos", "105", "Sala 800", "Centro", "3877012", cli1, c2);
+		Endereco e3 = new Endereco(null, "Avenida Floriano", "2106", null, "Centro", "98193880", cli2, c2);
 
 		cli1.getEnderecos().addAll(Arrays.asList(e1, e2));
+		cli2.getEnderecos().addAll(Arrays.asList(e3));
 
-		clienteRepository.saveAll(Arrays.asList(cli1));
-		enderecoRepository.saveAll(Arrays.asList(e1, e2));
+		clienteRepository.saveAll(Arrays.asList(cli1, cli2));
+		enderecoRepository.saveAll(Arrays.asList(e1, e2, e3));
 
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm");
 
