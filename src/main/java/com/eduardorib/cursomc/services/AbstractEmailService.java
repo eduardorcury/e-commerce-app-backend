@@ -50,7 +50,7 @@ public abstract class AbstractEmailService implements EmailService {
 		
 		Context context = new Context();
 		context.setVariable("pedido", obj);
-		return templateEngine.process("email/confirmacaopedido", context);
+		return templateEngine.process("email/confirmacaoPedido", context);
 		
 	}
 	
