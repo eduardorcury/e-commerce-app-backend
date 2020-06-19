@@ -99,5 +99,33 @@ A requisição retorna um header Authorization, com o **token JWT** que deve ser
 
 Caso o cliente tenha esquecido da senha, é possível recadastrá-la a partir do endpoint */auth/forgot*. Será enviado um email com uma nova senha gerada aleatoriamente.
 
-A partir do endpoint */auth/forgot* é possível recadastrar uma senha caso o cliente tenha esquecido
 O token JWT tem duração de 1 dia, definida em [application.properties](https://github.com/eduardorcury/e-commerce-app-backend/blob/master/src/main/resources/application.properties). É possível atualizar o token no endpoint */auth/refresh_token*.
+
+### Envio de Email
+
+O serviço de Email permite que seja enviado um email com um resumo da compra após a finalização do pedido, além do envio de email quando houver uma requisição ao endpoint */auth/forgot*.
+
+### Bucket Amazon S3
+
+As imagens das categorias, produtos e dos clientes são armazenadas com o serviço Amazon S3.
+
+## :mag_right: &nbsp;&nbsp; Como Usar
+
+O backend já está hospedado como um [herokuapp](https://curso-spring-eduardo.herokuapp.com/). Por razões de segurança, o último commit desse projeto não é a versão de produção.
+
+Caso se queira usar esse projeto em produção, deve-se modificar as credenciais da Amazon S3 no arquivo [application.properties](https://github.com/eduardorcury/e-commerce-app-backend/blob/master/src/main/resources/application.properties).
+
+```
+spring.profiles.active=prod
+
+aws.access_key_id = [credenciais Amazon S3]
+aws.secret_access_key = [credenciais Amazon S3]
+s3.bucket = [Nome do bucket]
+s3.region = [Região do bucket]
+```
+Deve-se também incluir as credenciais do email no arquivo [application-prod.properties](https://github.com/eduardorcury/e-commerce-app-backend/blob/master/src/main/resources/application-prod.properties).
+
+```
+spring.mail.username=[Credenciais do email]
+spring.mail.password=[Credenciais do email]
+```
