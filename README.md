@@ -32,11 +32,11 @@ Os relacionamentos das entidades da aplicação são:
 
 #### Categorias
 
-HTTP GET e POST para endpoints */categorias*
+HTTP GET e POST para endpoint */categorias*
 ```
 https://curso-spring-eduardo.herokuapp.com/categorias
 ```
-HTTP GET, PUT e DELETE para endpoints */categorias/{id}*
+HTTP GET, PUT e DELETE para endpoint */categorias/{id}*
 ```
 https://curso-spring-eduardo.herokuapp.com/categorias/1
 ```
@@ -49,7 +49,7 @@ https://curso-spring-eduardo.herokuapp.com/categorias/page?page=1&linesPerPage=3
 
 #### Produtos
 
-HTTP GET para endpoints */produtos/{id}*
+HTTP GET para endpoint */produtos/{id}*
 ```
 https://curso-spring-eduardo.herokuapp.com/produtos/1
 ```
@@ -58,4 +58,46 @@ Paginação da requisição com os parâmetros de *nome, categorias, page, lines
 https://curso-spring-eduardo.herokuapp.com/produtos/?nome=or&categorias=1,2,3,4,5&page=0&linesPerPage=5&orderBy=nome&direction=ASC
 ```
 
-#### Produtos
+#### Clientes
+
+HTTP GET para endpoint */clientes* para usuário com permissão de *ADMIN* e */clientes/{id}* para o usuário logado. Retorna todos os clientes cadastrados no banco de dados ou os dados do cliente com o *id* especificado. Para fazer o login de um usuário, veja a seção de autenticação.
+
+HTTP POST para endpoint */clientes*. Permite o cadastro de novos clientes.
+
+HTTP PUT para endpoint */clientes/{id}* disponível para o usuário logado. Permite a modificação dos dados cadastrados.
+
+#### Estados
+
+HTTP GET para endpoint */estados*. Retorna os estados cadastrados.
+
+```
+https://curso-spring-eduardo.herokuapp.com/estados
+```
+
+HTTP GET para endpoint */estados/{estadoId}/cidades*. Retorna as cidades cadastradas do estado com *id* igual a *estadoId*.
+
+```
+https://curso-spring-eduardo.herokuapp.com/estados/2/cidades
+```
+
+#### Pedidos
+
+HTTP GET e POST para endpoint */pedidos*. Retorna os pedidos do usuário logado e permite cadastro de novos pedidos. Para fazer o login de um usuário, veja a próxima seção.
+
+### Autenticação e Autorização
+
+É possível fazer o login de uma conta com método HTTP POST através do endpoint */login*, passando o email e senha cadastrados:
+
+```json
+{
+	"email": "duducury10@gmail.com",
+	"senha": "123"
+}
+```
+
+A requisição retorna um header Authorization, com o **token JWT** que deve ser passado para as demais requisições.
+
+Caso o cliente tenha esquecido da senha, é possível recadastrá-la a partir do endpoint */auth/forgot*. Será enviado um email com uma nova senha gerada aleatoriamente.
+
+A partir do endpoint */auth/forgot* é possível recadastrar uma senha caso o cliente tenha esquecido
+O token JWT tem duração de 1 dia, definida em [application.properties](https://github.com/eduardorcury/e-commerce-app-backend/blob/master/src/main/resources/application.properties). É possível atualizar o token no endpoint */auth/refresh_token*.
