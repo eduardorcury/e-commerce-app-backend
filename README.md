@@ -1,3 +1,7 @@
+<p align="center">
+  <img width="378" height="97" src="https://github.com/eduardorcury/e-commerce-app-backend/blob/master/springlogo.svg">
+</p>
+
 # RESTful API de aplicativo e-commerce
 
 > Backend de uma aplicação e-commerce, com Java e Spring Framework. Frontend da aplicação disponível [aqui](https://github.com/eduardorcury/e-commerce-app-frontend).
